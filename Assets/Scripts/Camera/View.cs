@@ -120,6 +120,14 @@ public class View : MonoBehaviour
 
     private bool TryGetSensorRotation(float dt, out Quaternion outputRotation)
     {
+        #if UNITY_EDITOR
+        if (useEditorMouseFallback)
+        {
+            outputRotation = Quaternion.identity;
+            return false;
+        }
+        #endif
+
         Quaternion rawGyroRotation = GyroToUnity(Input.gyro.attitude, compensateScreenOrientation);
         Quaternion gyroRotation = ApplyReference(rawGyroRotation);
 

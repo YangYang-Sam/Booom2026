@@ -64,11 +64,11 @@ public class ConnectionWatch : MonoBehaviour
         bool waitToTriggerConnected = connectionTime < stayConnectedForSec;
         bool waitToTriggerDisconnected = connectionTime < stayDisconnectedForSec;
         connectionTime += Time.deltaTime;
-        if (waitToTriggerConnected && connectionTime >= stayConnectedForSec)
+        if (waitToTriggerConnected && IsConnected && connectionTime >= stayConnectedForSec)
         {
             onConnected.Invoke();
         }
-        if (waitToTriggerDisconnected && connectionTime >= stayDisconnectedForSec)
+        if (waitToTriggerDisconnected && !IsConnected && connectionTime >= stayDisconnectedForSec)
         {
             onDisconnected.Invoke();
         }

@@ -38,10 +38,12 @@ public class ConnectionDeterminator : MonoBehaviour
             if (isConnected)
             {
                 onConnected.Invoke();
+                OnConnected?.Invoke();
             }
             else
             {
                 onDisconnected.Invoke();
+                OnDisconnected?.Invoke();
             }
         }
     }
