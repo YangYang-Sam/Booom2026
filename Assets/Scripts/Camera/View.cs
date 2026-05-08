@@ -198,6 +198,12 @@ public class View : MonoBehaviour
         yawRecenterOffset = -currentYaw;
     }
 
+    public void RecenterYawWithOffset(float offset)
+    {
+        RecenterYaw();
+        yawRecenterOffset += offset;
+    }
+
     private void RecreateFilters()
     {
         yawFilter = new OneEuroAngleFilter(minCutoff, beta, derivativeCutoff);

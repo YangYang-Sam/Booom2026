@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using JTUtility;
 
 public class ConnectionDeterminator : MonoBehaviour
 {
@@ -12,6 +13,11 @@ public class ConnectionDeterminator : MonoBehaviour
     [SerializeField] float timeThreshold = 1f;
     [SerializeField] UnityEvent onConnected = new UnityEvent();
     [SerializeField] UnityEvent onDisconnected = new UnityEvent();
+
+    public bool IsConnected { get => isConnected; }
+
+    public event Action OnConnected;
+    public event Action OnDisconnected;
 
     bool isConnected = false;
     bool shouldConnect = false;
