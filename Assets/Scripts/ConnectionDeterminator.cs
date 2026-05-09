@@ -20,12 +20,26 @@ public class ConnectionDeterminator : MonoBehaviour
     public event Action OnDisconnected;
 
     bool isConnected = false;
-    bool shouldConnect = false;
     float lastStableTime = 0;
+
+    void OnEnable()
+    {
+        isConnected = Vector3.Angle(cameraTransform.forward, -Vector3.up) > angleThreshold;
+        if (isConnected)
+        {
+            onConnected.Invoke();
+            OnConnected?.Invoke();
+        }
+        else
+        {
+            onDisconnected.Invoke();
+            OnDisconnected?.Invoke();
+        }
+    }
 
     private void Update()
     {
-        shouldConnect = Vector3.Angle(cameraTransform.forward, -Vector3.up) > angleThreshold;
+        var shouldConnect = Vector3.Angle(cameraTransform.forward, -Vector3.up) > angleThreshold;
         
         if (shouldConnect == isConnected)
         {
