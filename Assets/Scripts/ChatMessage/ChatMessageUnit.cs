@@ -12,6 +12,19 @@ public class ChatMessageUnit : MonoBehaviour
     [SerializeField] TMP_Text messageText;
     [SerializeField] TMP_Text ownerNameText;
     [SerializeField] Image ownerIconImage;
+    [SerializeField] bool sendFromSelf = false;
+
+    void OnEnable()
+    {
+        if (sendFromSelf)
+        {
+            SetSendFromSelf();
+        }
+        else
+        {
+            SetSendFromOther();
+        }
+    }
 
     public string MessageText
     {
@@ -36,6 +49,7 @@ public class ChatMessageUnit : MonoBehaviour
         messageHolder.SetAsLastSibling();
         ownerIcon.SetAsFirstSibling();
         messageHolderLayout.childAlignment = TextAnchor.UpperLeft;
+        sendFromSelf = false;
     }
 
     public void SetSendFromSelf()
@@ -43,6 +57,7 @@ public class ChatMessageUnit : MonoBehaviour
         messageHolder.SetAsFirstSibling();
         ownerIcon.SetAsLastSibling();
         messageHolderLayout.childAlignment = TextAnchor.UpperRight;
+        sendFromSelf = true;
     }
 
     public void Setup(string message, string ownerName, Sprite ownerIcon, bool isSendFromOther = true)

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 461830239380247235}
   - component: {fileID: 7424649474225558305}
+  - component: {fileID: 4782935205757886847}
   m_Layer: 5
   m_Name: ChatBoxSelectionUnit
   m_TagString: Untagged
@@ -58,6 +59,20 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &4782935205757886847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1351678473869062753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eed499dc4311cf24f86fea35b9393817, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 255425202814485438}
+  text: {fileID: 5975594998285428129}
 --- !u!1 &4443044430366739746
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,8 +215,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u6211\u5C31\u5728\u4F60\u9762\u524D\u3002"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 157708d31d76f6642b96c8f23de47d63, type: 2}
-  m_sharedMaterial: {fileID: 1671101092040725025, guid: 157708d31d76f6642b96c8f23de47d63,
+  m_fontAsset: {fileID: 11400000, guid: c41a0900366252c4d82cc902f02d9c26, type: 2}
+  m_sharedMaterial: {fileID: 1671101092040725025, guid: c41a0900366252c4d82cc902f02d9c26,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
