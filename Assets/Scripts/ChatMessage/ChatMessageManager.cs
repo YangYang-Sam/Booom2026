@@ -57,6 +57,7 @@ public class ChatMessageManager : MonoBehaviour
     [Header("References")]
     [SerializeField] GameObject chatBox;
     [SerializeField] Button chatButton;
+    [SerializeField] GameObject chatButtonGO;
     [SerializeField] Button talkButton;
     [SerializeField] GameObject talkButtonGO;
 
@@ -300,6 +301,11 @@ public class ChatMessageManager : MonoBehaviour
             chatButton.interactable = true;
         }
 
+        if (chatButtonGO.IsNotNull())
+        {
+            chatButtonGO.SetActive(true);
+        }
+
         if (talkButtonGO.IsNotNull())
         {
             talkButtonGO.SetActive(false);
@@ -316,6 +322,11 @@ public class ChatMessageManager : MonoBehaviour
         if (chatButton.IsNotNull())
         {
             chatButton.interactable = false;
+        }
+
+        if (chatButtonGO.IsNotNull())
+        {
+            chatButtonGO.SetActive(false);
         }
 
         if (currentTalkResponseSequence != null && talkButtonGO.IsNotNull())

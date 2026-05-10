@@ -7870,6 +7870,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chatBox: {fileID: 1583753466}
   chatButton: {fileID: 1981512642}
+  chatButtonGO: {fileID: 1360365541}
   talkButton: {fileID: 1909556854}
   talkButtonGO: {fileID: 97151708}
   connectionDeterminator: {fileID: 1638749580}
@@ -8271,6 +8272,18 @@ MonoBehaviour:
             m_StringArgument: talk3_1
             m_BoolArgument: 1
           m_CallState: 2
+        - m_Target: {fileID: 1583753466}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: talk3_1
+            m_BoolArgument: 0
+          m_CallState: 2
   talkSequences:
   - id: talk1_1
     delay: 0
@@ -8646,7 +8659,7 @@ MonoBehaviour:
     choices:
     - id: 1
       choiceText: "\u4ED6\u89C9\u5F97\u4E0D\u5BF9\u52B2\uFF0C\u8BF4\u4F60\u4EEC\u90FD\u88AB\u624B\u673A\u8FDE\u63A5\u52FE\u4E86\u9B42\u3002"
-      messageId: self5
+      messageId: self6
     onChoiceGroupSelected:
       m_PersistentCalls:
         m_Calls:
@@ -8666,7 +8679,7 @@ MonoBehaviour:
     choices:
     - id: 1
       choiceText: ...
-      messageId: self6
+      messageId: self7
     onChoiceGroupSelected:
       m_PersistentCalls:
         m_Calls:
