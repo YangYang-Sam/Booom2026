@@ -9207,7 +9207,7 @@ MonoBehaviour:
       id: 
       ownerId: child
       time: 1
-    - message: "\u3010\u8868\u60C5\u3011"
+    - message: <sprite="EmojiOne" index=3>
       id: 
       ownerId: child
       time: 3
@@ -9244,7 +9244,7 @@ MonoBehaviour:
       id: 
       ownerId: child
       time: 1
-    - message: "\u3010\u8868\u60C5\u3011"
+    - message: <sprite="EmojiOne" index=6>
       id: 
       ownerId: child
       time: 3
