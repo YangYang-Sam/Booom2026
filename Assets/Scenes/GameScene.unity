@@ -9210,7 +9210,7 @@ MonoBehaviour:
     - message: "\u3010\u8868\u60C5\u3011"
       id: 
       ownerId: child
-      time: 2
+      time: 3
     - message: "\u4F60\u5730\u94C1\u91CC\u5230\u4E86\u5417\uFF1F"
       id: 
       ownerId: child
@@ -9240,14 +9240,18 @@ MonoBehaviour:
   - id: chat1_2
     delay: 1
     messages:
-    - message: "\u592A\u597D\u4E86\uFF01(\u8868\u60C5\u5305)"
+    - message: "\u592A\u597D\u4E86\uFF01"
       id: 
       ownerId: child
       time: 1
+    - message: "\u3010\u8868\u60C5\u3011"
+      id: 
+      ownerId: child
+      time: 3
     - message: "\u6211\u7237\u7237\uFF0C\u4ED6\u5C31\u5750\u5728\u8F66\u53A2\u91CC\uFF0C\u4F60\u627E\u627E\uFF01"
       id: 
       ownerId: child
-      time: 1
+      time: 2
     - message: "\u4ED6\u7A7F\u7EA2\u8272\u8863\u670D\uFF01"
       id: 
       ownerId: child
@@ -9285,15 +9289,19 @@ MonoBehaviour:
   - id: chat1_3
     delay: 0
     messages:
-    - message: "\u7237\u7237\u53EF\u80FD\u751F\u6C14\u4E86\u3002"
+    - message: "\u55EF\uFF0C\u7237\u7237\u53EF\u80FD\u751F\u6C14\u4E86\u3002"
       id: 
       ownerId: child
-      time: 1
+      time: 4
     - message: "\u6211\u7ED9\u4ED6\u53D1\u6D88\u606F\uFF0C\u4F46\u662F\u4ED6\u4E0D\u770B\u3002"
       id: 
       ownerId: child
-      time: 1
-    - message: "\u4F60\u5F97\u5E2E\u6211\uFF0C\u5148\u548C\u4ED6\u8BF4\u4E0A\u8BDD\u3002"
+      time: 3
+    - message: "\u4F60\u5F97\u5E2E\u6211\u63D0\u9192\u4ED6\u770B\u6D88\u606F\u3002"
+      id: 
+      ownerId: child
+      time: 3
+    - message: "\u4F60\u5148\u548C\u4ED6\u8BF4\u4E0A\u8BDD\u3002"
       id: 
       ownerId: child
       time: 1
@@ -9583,7 +9591,11 @@ MonoBehaviour:
   - id: talk1_4
     delay: 0
     messages:
-    - message: "\u54FC\u3002\u6709\u4EC0\u4E48\u4E8B\u60C5\uFF0C\u5C31\u4E0D\u80FD\u76F4\u63A5\u8BF4\u5417\uFF1F\u975E\u8981\u628A\u624B\u673A\u7C98\u5728\u8138\u4E0A\u5417\uFF1F"
+    - message: "\u54FC\u3002\u6709\u4EC0\u4E48\u4E8B\u60C5\uFF0C\u5C31\u4E0D\u80FD\u76F4\u63A5\u8BF4\u5417\uFF1F"
+      id: 
+      ownerId: 
+      time: 3
+    - message: "\u975E\u8981\u548C\u4F60\u4EEC\u4E00\u6837\uFF0C\u628A\u624B\u673A\u7C98\u5728\u8138\u4E0A\u5417\uFF1F"
       id: 
       ownerId: 
       time: 1
@@ -9636,11 +9648,11 @@ MonoBehaviour:
     - message: "\u4F60\u770B\u770B\u554A\uFF0C\u4E00\u8F66\u53A2\u7684\u4EBA\uFF0C\u6CA1\u4E00\u4E2A\u62AC\u5934\u3002"
       id: 
       ownerId: 
-      time: 1
+      time: 2
     - message: "\u4F60\u6CA1\u89C9\u5F97\u4E0D\u5BF9\u52B2\u5417\uFF1F"
       id: 
       ownerId: 
-      time: 1
+      time: 3
     - message: "\u4EE5\u524D\u5750\u8F66\u7684\u65F6\u5019\uFF0C\u4EBA\u8FD8\u4F1A\u804A\u5929\u3002"
       id: 
       ownerId: 
@@ -9694,19 +9706,19 @@ MonoBehaviour:
     - message: "\u53EF\u4F60\u770B\u8FD9\u4E00\u8F66\u4EBA\u3002"
       id: 
       ownerId: 
-      time: 1
+      time: 2
     - message: "\u6CA1\u4E00\u4E2A\u62AC\u5934\u3002"
       id: 
       ownerId: 
-      time: 1
+      time: 3
     - message: "\u4EBA\u90FD\u5728\u8FD9\u513F\u3002"
       id: 
       ownerId: 
-      time: 1
+      time: 3
     - message: "\u773C\u795E\u5374\u90FD\u4E0D\u5728\u3002"
       id: 
       ownerId: 
-      time: 1
+      time: 3
     - message: "\u6211\u7684\u5B59\u5B50\uFF0C\u4E5F\u662F\u7ED9\u8FD9\u4E1C\u897F\u52FE\u4E86\u9B42\u3002"
       id: 
       ownerId: 
@@ -9732,7 +9744,11 @@ MonoBehaviour:
   - id: talk3_1
     delay: 0
     messages:
-    - message: "\u5927\u7237\uFF0C\u60A8\u5B59\u5B50\u8BF4\u5E2E\u4F60\u67E5\u4E86\uFF0C\u4F60\u60F3\u53BB\u7684\u5730\u65B9\uFF0C\u5E94\u8BE5\u5728\u4E0B\u7AD9\u4E0B\u8F66\u4E86\u3002"
+    - message: "\u5927\u7237\uFF0C\u60A8\u5B59\u5B50\u8BF4\u5E2E\u4F60\u67E5\u4E86\u3002"
+      id: 
+      ownerId: 
+      time: 2
+    - message: "\u4F60\u60F3\u53BB\u7684\u5730\u65B9\uFF0C\u5E94\u8BE5\u5728\u4E0B\u7AD9\u4E0B\u8F66\u4E86\u3002"
       id: 
       ownerId: 
       time: 1
@@ -9757,15 +9773,19 @@ MonoBehaviour:
   - id: talk3_2
     delay: 0
     messages:
-    - message: "\u4EE5\u524D\u53BB\u54EA\u90FD\u662F\u76F4\u63A5\u8D70\u7684\u3002"
+    - message: "\u5230\u4E86\uFF1F\u8FD9\u4E48\u5FEB\uFF1F"
       id: 
       ownerId: 
       time: 1
-    - message: "\u5509\uFF0C\u4E00\u76F4\u76EF\u7740\u90A3\u4E2A\u5C4F\u5E55\uFF0C\u4EBA\u90FD\u4E0D\u5728\u8FD9\u4E86\u3002"
+    - message: "\u5509\uFF0C\u5E74\u8F7B\u4EBA\u554A\uFF0C\u4EE5\u524D\u53BB\u54EA\u90FD\u662F\u76F4\u63A5\u8D70\u7684\u3002"
       id: 
       ownerId: 
-      time: 1
-    - message: "\u5B59\u513F\uFF0C\u6211\u4EEC\u4E0B\u8F66\u5427\u3002\uFF08\u5927\u58F0\uFF09"
+      time: 3
+    - message: "\u73B0\u5728\u600E\u4E48\u4E00\u76F4\u76EF\u7740\u90A3\u4E2A\u5C4F\u5E55\uFF0C\u4E5F\u4E0D\u76F4\u63A5\u8BF4\u8BDD\uFF0C\u4EBA\u90FD\u4E0D\u5728\u8FD9\u4E86\u3002"
+      id: 
+      ownerId: 
+      time: 4
+    - message: "\u5B59\u513F\uFF0C\u6211\u4EEC\u4E0B\u8F66\u5427\u3002"
       id: 
       ownerId: 
       time: 1
