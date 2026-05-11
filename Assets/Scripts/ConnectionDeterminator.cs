@@ -13,6 +13,7 @@ public class ConnectionDeterminator : MonoBehaviour
     [SerializeField] float timeThreshold = 1f;
     [SerializeField] UnityEvent onConnected = new UnityEvent();
     [SerializeField] UnityEvent onDisconnected = new UnityEvent();
+    [SerializeField] float angle;
 
     public bool IsConnected { get => isConnected; }
 
@@ -24,29 +25,21 @@ public class ConnectionDeterminator : MonoBehaviour
 
     void OnEnable()
     {
-        isConnected = Vector3.Angle(cameraTransform.forward, -Vector3.up) > angleThreshold;
-        if (isConnected)
-        {
-            onConnected.Invoke();
-            OnConnected?.Invoke();
-        }
-        else
-        {
-            onDisconnected.Invoke();
-            OnDisconnected?.Invoke();
-        }
+        StartCoroutine(UpdateOnEnable());
     }
 
     private void Update()
     {
-        var shouldConnect = Vector3.Angle(cameraTransform.forward, -Vector3.up) > angleThreshold;
+        var shouldConnect = ShouldConnect();
         
+        lastStableTime -= Time.deltaTime;
         if (shouldConnect == isConnected)
         {
-            lastStableTime = Time.time;
+            lastStableTime = timeThreshold;
+            return;
         }
 
-        if (Time.time - lastStableTime > timeThreshold)
+        if (lastStableTime <= 0)
         {
             isConnected = shouldConnect;
             if (isConnected)
@@ -59,6 +52,28 @@ public class ConnectionDeterminator : MonoBehaviour
                 onDisconnected.Invoke();
                 OnDisconnected?.Invoke();
             }
+        }
+    }
+
+    private bool ShouldConnect()
+    {
+        angle = Vector3.Angle(cameraTransform.forward, -Vector3.up);
+        return angle > angleThreshold;
+    }
+
+    private IEnumerator UpdateOnEnable()
+    {
+        yield return null;
+        isConnected = ShouldConnect();
+        if (isConnected)
+        {
+            onConnected.Invoke();
+            OnConnected?.Invoke();
+        }
+        else
+        {
+            onDisconnected.Invoke();
+            OnDisconnected?.Invoke();
         }
     }
 }
