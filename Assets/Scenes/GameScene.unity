@@ -1364,12 +1364,12 @@ PrefabInstance:
     - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
         type: 3}
@@ -1388,22 +1388,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 420411161}
+      objectReference: {fileID: 622174754}
     - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1011660940}
+      objectReference: {fileID: 420411161}
     - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 1203761919}
+      objectReference: {fileID: 1011660940}
     - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1203761919}
+    - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Target
       value: 
       objectReference: {fileID: 138505586}
     - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
@@ -1428,8 +1438,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SetActive
+      value: QueueTalkSequence
       objectReference: {fileID: 0}
     - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
         type: 3}
@@ -1448,8 +1463,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.GameObject, UnityEngine
+      value: ChatMessageManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
         type: 3}
@@ -1468,13 +1488,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_BoolArgument
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: talk1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_StringArgument
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
         type: 3}
@@ -1494,6 +1534,11 @@ PrefabInstance:
     - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 255425202814485438, guid: 44d716cae156a5f45941910424ef0e78,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 461830239380247235, guid: 44d716cae156a5f45941910424ef0e78,
@@ -5630,7 +5675,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: -1.8200157e-17, y: 1, z: -4.1542336e-10, w: -0.000000043811106}
+  m_LocalRotation: {x: -4.7455158e-23, y: 1, z: -1.6675021e-15, w: -0.00000002845883}
   m_LocalPosition: {x: 0, y: 1.7, z: 7.904}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9133,22 +9178,6 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: db6340fcf1ca0cf46a6bd60f5fc52217, type: 3}
     isSelf: 0
   chatMessages:
-  - message: "\u54C8\u5570\uFF01"
-    id: child1
-    ownerId: child
-    time: 1
-  - message: "\u3010\u8868\u60C5\u3011"
-    id: child19
-    ownerId: child
-    time: 1
-  - message: "\u4F60\u5230\u4E86\u5417\uFF1F"
-    id: child2
-    ownerId: child
-    time: 2
-  - message: "\u5FEB\u5E2E\u5E2E\u6211\u5427\uFF01\u7403\u7403\u4E86\uFF01"
-    id: child3
-    ownerId: child
-    time: 0
   - message: "\u6211\u5DF2\u5230\u8F66\u53A2\u91CC\u4E86\u3002"
     id: self1
     ownerId: self
@@ -9157,85 +9186,41 @@ MonoBehaviour:
     id: self2
     ownerId: self
     time: 0
-  - message: "\u592A\u597D\u4E86\uFF01(\u8868\u60C5\u5305)"
-    id: child4
-    ownerId: child
-    time: 0
-  - message: "\u6211\u7237\u7237\uFF0C\u4ED6\u5C31\u5750\u5728\u8F66\u53A2\u91CC\uFF0C\u4F60\u627E\u627E\uFF01"
-    id: child5
-    ownerId: child
-    time: 0
-  - message: "\u4ED6\u7A7F\u7EA2\u8272\u8863\u670D\uFF01"
-    id: child6
-    ownerId: child
-    time: 0
-  - message: "\u7237\u7237\u53EF\u80FD\u751F\u6C14\u4E86\u3002"
-    id: child7
-    ownerId: child
-    time: 0
-  - message: "\u6211\u7ED9\u4ED6\u53D1\u6D88\u606F\uFF0C\u4F46\u662F\u4ED6\u4E0D\u770B\u3002"
-    id: child8
-    ownerId: child
-    time: 0
-  - message: "\u4F60\u5F97\u5E2E\u6211\uFF0C\u5148\u548C\u4ED6\u8BF4\u4E0A\u8BDD\u3002"
-    id: child9
-    ownerId: child
-    time: 0
   - message: "\u5927\u7237\uFF0C\u4F60\u597D\u3002"
     id: self3
     ownerId: self
-    time: 0
-  - message: "\u600E\u4E48\u6837\u600E\u4E48\u6837\uFF1F"
-    id: child10
-    ownerId: child
-    time: 0
-  - message: "\u4ED6\u770B\u6D88\u606F\u4E86\u5417\uFF1F"
-    id: child11
-    ownerId: child
     time: 0
   - message: "\u6CA1\u6709\u3002"
     id: self4
     ownerId: self
     time: 0
-  - message: "\u5509\uFF0C\u600E\u4E48\u529E...\u6211\u521A\u7ED9\u4ED6\u4E70\u7684\u624B\u673A\u3002"
-    id: child12
-    ownerId: child
-    time: 0
-  - message: "\u5F88\u65B9\u4FBF\u7684\u4E1C\u897F\uFF0C\u4F46\u662F\u4ED6\u4E00\u76F4\u4E0D\u80AF\u7528\u3002"
-    id: child13
-    ownerId: child
-    time: 0
-  - message: "\u4F60\u5E2E\u6211\u529D\u4ED6\uFF1F"
-    id: child14
-    ownerId: child
-    time: 0
   - message: "\u6211\u8BD5\u8BD5\u3002"
     id: self5
     ownerId: self
-    time: 0
-  - message: "\u4ED6\u8BF4\u4EC0\u4E48\uFF1F"
-    id: child15
-    ownerId: child
-    time: 0
-  - message: "\u4ED6\u89C9\u5F97\u4E0D\u5BF9\u52B2\uFF0C\u8BF4\u4F60\u4EEC\u90FD\u88AB\u624B\u673A\u8FDE\u63A5\u52FE\u4E86\u9B42\u3002"
-    id: self6
-    ownerId: self
-    time: 0
-  - message: "\u54C8\u54C8\uFF0C\u4ED6\u8001\u8FD9\u6837\u3002\u4F60\u80FD\u4FE1\u5417\uFF1F"
-    id: child16
-    ownerId: child
     time: 0
   - message: "\u2026\u2026"
     id: self7
     ownerId: self
     time: 0
-  - message: "\u4F60\u6700\u540E\u4E00\u6B21\u5E2E\u6211\u7ED9\u4ED6\u4F20\u8BDD\u5427"
-    id: child17
-    ownerId: child
+  - message: "\u2026\u2026"
+    id: self7
+    ownerId: self
     time: 0
-  - message: "\u6211\u5728\u624B\u673A\u4E0A\u67E5\u4E86\uFF0C\u7237\u7237\u60F3\u53BB\u7684\u5730\u65B9\uFF0C\u5E94\u8BE5\u5728\u4E0B\u7AD9\u4E0B\u8F66\u4E86\u3002"
-    id: child18
-    ownerId: child
+  - message: "\u989D\uFF0C\u4F60\u7237\u7237\u5728\u54EA\uFF1F"
+    id: self8
+    ownerId: self
+    time: 0
+  - message: "\u4F60\u7237\u7237\u957F\u4EC0\u4E48\u6837\u5B50\uFF1F"
+    id: self9
+    ownerId: self
+    time: 0
+  - message: "\u6211\u627E\u5230\u4E86\uFF0C\u7EA2\u8272\u8863\u670D\u7684\u8001\u4EBA"
+    id: self10
+    ownerId: self
+    time: 0
+  - message: "\u627E\u5230\u4E86\uFF0C\u6CA1\u62FF\u624B\u673A\u7684\u8001\u4EBA"
+    id: self11
+    ownerId: self
     time: 0
   chatMessageSequences:
   - id: chat1_1
@@ -9298,11 +9283,44 @@ MonoBehaviour:
       id: 
       ownerId: child
       time: 3
-    - message: "\u6211\u7237\u7237\uFF0C\u4ED6\u5C31\u5750\u5728\u8F66\u53A2\u91CC\uFF0C\u4F60\u627E\u627E\uFF01"
+    - message: "\u5E2E\u5E2E\u6211\uFF0C\u7ED9\u7237\u7237\u4F20\u8BDD\u3002"
       id: 
       ownerId: child
       time: 2
-    - message: "\u4ED6\u7A7F\u7EA2\u8272\u8863\u670D\uFF01"
+    - message: "\u6211\u53D1\u4E86\u6D88\u606F\u4ED6\u6839\u672C\u4E0D\u770B\uFF01"
+      id: 
+      ownerId: child
+      time: 1
+    onSequenceStarted:
+      m_PersistentCalls:
+        m_Calls: []
+    onSequenceFinished:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 622174754}
+          m_TargetAssemblyTypeName: ChatMessageManager, Assembly-CSharp
+          m_MethodName: ShowChatChoiceGroup
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: chat1_2
+            m_BoolArgument: 1
+          m_CallState: 2
+  - id: chat1_3
+    delay: 0
+    messages:
+    - message: "\u4ED6\u7A7F\u7EA2\u8272\u8863\u670D\u3002"
+      id: 
+      ownerId: child
+      time: 3
+    - message: "\u6CA1\u8FDE\u63A5\u624B\u673A\u7684\u90A3\u4E2A\u4EBA\uFF0C\u5F88\u597D\u8BA4\u7684\u3002"
+      id: 
+      ownerId: child
+      time: 2
+    - message: "\u4F60\u5148\u770B\u770B\u5468\u56F4\uFF0C\u627E\u5230\u4ED6\uFF01"
       id: 
       ownerId: child
       time: 1
@@ -9324,14 +9342,18 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-  - id: chat1_3
+  - id: chat1_4
     delay: 0
     messages:
-    - message: "\u55EF\uFF0C\u7237\u7237\u53EF\u80FD\u751F\u6C14\u4E86\u3002"
+    - message: <sprite="EmojiOne" index=10>
+      id: 
+      ownerId: child
+      time: 1
+    - message: "\u7237\u7237\u53EF\u80FD\u751F\u6C14\u4E86\u3002"
       id: 
       ownerId: child
       time: 4
-    - message: "\u6211\u7ED9\u4ED6\u53D1\u6D88\u606F\uFF0C\u4F46\u662F\u4ED6\u4E0D\u770B\u3002"
+    - message: "\u6211\u7ED9\u4ED6\u53D1\u624B\u673A\u6D88\u606F\uFF0C\u4F46\u662F\u4ED6\u4E0D\u770B\u3002"
       id: 
       ownerId: child
       time: 3
@@ -9539,6 +9561,47 @@ MonoBehaviour:
             m_BoolArgument: 1
           m_CallState: 2
   talkSequences:
+  - id: talk1_0
+    delay: 3
+    messages:
+    - message: "\u8001\u4EBA\u6CA1\u8FDE\u63A5\u624B\u673A\uFF0C\u4ED6\u6CA1\u6709\u7406\u6211\u3002"
+      id: 
+      ownerId: 
+      time: 2
+    - message: "\u6216\u8BB8\u6211\u5E94\u8BE5\u3010\u653E\u4E0B\u3011\u624B\u673A\uFF0C\u548C\u4ED6\u76F4\u63A5\u4EA4\u6D41\u3002"
+      id: 
+      ownerId: 
+      time: 3
+    onSequenceStarted:
+      m_PersistentCalls:
+        m_Calls: []
+    onSequenceFinished:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 622174754}
+          m_TargetAssemblyTypeName: ChatMessageManager, Assembly-CSharp
+          m_MethodName: QueueTalkSequence
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: talk1_2
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 138505586}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: talk1_2
+            m_BoolArgument: 0
+          m_CallState: 2
   - id: talk1_1
     delay: 0
     messages:
@@ -9867,6 +9930,52 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: chat1_2
+            m_BoolArgument: 0
+          m_CallState: 2
+  - id: chat1_2
+    choices:
+    - id: 1
+      choiceText: "\u989D\uFF0C\u4F60\u7237\u7237\u5728\u54EA\uFF1F"
+      messageId: self8
+    - id: 2
+      choiceText: "\u4F60\u7237\u7237\u957F\u4EC0\u4E48\u6837\u5B50\uFF1F"
+      messageId: self9
+    onChoiceGroupSelected:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 622174754}
+          m_TargetAssemblyTypeName: ChatMessageManager, Assembly-CSharp
+          m_MethodName: QueueChatMessageSequence
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: chat1_3
+            m_BoolArgument: 0
+          m_CallState: 2
+  - id: chat1_3
+    choices:
+    - id: 1
+      choiceText: "\u6211\u627E\u5230\u4E86\uFF0C\u7EA2\u8272\u8863\u670D\u7684\u8001\u4EBA"
+      messageId: self10
+    - id: 2
+      choiceText: "\u627E\u5230\u4E86\uFF0C\u6CA1\u62FF\u624B\u673A\u7684\u8001\u4EBA"
+      messageId: self11
+    onChoiceGroupSelected:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 622174754}
+          m_TargetAssemblyTypeName: ChatMessageManager, Assembly-CSharp
+          m_MethodName: QueueChatMessageSequence
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: chat1_4
             m_BoolArgument: 0
           m_CallState: 2
   - id: chat2_1
@@ -13212,7 +13321,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 622174754}
           m_TargetAssemblyTypeName: ChatMessageManager, Assembly-CSharp
-          m_MethodName: QueueChatMessageSequence
+          m_MethodName: ShowChatChoiceGroup
           m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -15874,6 +15983,18 @@ MonoBehaviour:
     Event:
       m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 1638749581}
+          m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+          m_MethodName: set_enabled
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
         - m_Target: {fileID: 1186532208}
           m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_MethodName: SetActive
@@ -26688,7 +26809,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1638749579}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0827fba19a774f44eb12f702bfa14e53, type: 3}
   m_Name: 
@@ -27396,7 +27517,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1662849738}
   serializedVersion: 2
-  m_LocalRotation: {x: -1.887065e-17, y: 1, z: -4.1542336e-10, w: -0.000000043811106}
+  m_LocalRotation: {x: 1.0591503e-16, y: 1, z: -1.6675021e-15, w: -0.00000002845883}
   m_LocalPosition: {x: 0, y: 1.7, z: 7.904}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
