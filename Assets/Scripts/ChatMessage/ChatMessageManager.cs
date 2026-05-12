@@ -56,6 +56,7 @@ public class ChatMessageManager : MonoBehaviour
     [SerializeField] GameObject chatBox;
     [SerializeField] Button chatButton;
     [SerializeField] GameObject chatButtonGO;
+    [SerializeField] GameObject chatMessageHintGO;
     [SerializeField] Button talkButton;
     [SerializeField] GameObject talkButtonGO;
 
@@ -139,11 +140,6 @@ public class ChatMessageManager : MonoBehaviour
             return;
         }
 
-        if (!chatBox.activeSelf)
-        {
-            chatBox.SetActive(true);
-        }
-
         chatMessageUnit.Setup(chatMessage.message, chatOwner.name, chatOwner.icon, !chatOwner.isSelf);
         chatMessageScrollRect.verticalNormalizedPosition = 0f;
         verticleLayoutSpace.SetAsLastSibling();
@@ -157,6 +153,11 @@ public class ChatMessageManager : MonoBehaviour
             return;
         }
 
+        if (!chatBox.activeSelf && chatMessageHintGO.IsNotNull())
+        {
+            chatMessageHintGO.SetActive(true);
+        }
+
         ChatMessageUnit chatMessageUnit = Instantiate(chatMessageUnitPrefab, chatMessageUnitParent);
         ChatOwner chatOwner = chatOwners.Find(owner => owner.id == chatMessage.ownerId);
         if (chatOwner == null)
@@ -167,7 +168,7 @@ public class ChatMessageManager : MonoBehaviour
 
         if (!chatBox.activeSelf)
         {
-            chatBox.SetActive(true);
+            //chatBox.SetActive(true);
         }
 
         chatMessageUnit.Setup(chatMessage.message, chatOwner.name, chatOwner.icon, !chatOwner.isSelf);
@@ -268,6 +269,11 @@ public class ChatMessageManager : MonoBehaviour
         {
             chatBox.SetActive(true);
         }
+
+        if (chatMessageHintGO.IsNotNull())
+        {
+            chatMessageHintGO.SetActive(false);
+        }
     }
 
     public void ShowChatChoiceGroup(string choiceGroupId)
@@ -277,6 +283,11 @@ public class ChatMessageManager : MonoBehaviour
         {
             Debug.LogError($"Chat choice group with id {choiceGroupId} not found");
             return;
+        }
+
+        if (chatMessageHintGO.IsNotNull() && !chatBox.activeSelf)
+        {
+            chatMessageHintGO.SetActive(true);
         }
 
         ChatMessageChoiceGroup chatMessageChoiceGroup = Instantiate(chatMessageChoiceGroupPrefab, chatMessageChoiceGroupParent);
@@ -301,7 +312,7 @@ public class ChatMessageManager : MonoBehaviour
     {
         if (hasQueuedChatMesssage && chatBox.IsNotNull())
         {
-            chatBox.SetActive(true);
+            //chatBox.SetActive(true);
         }
 
         if (chatButton.IsNotNull())
@@ -358,6 +369,11 @@ public class ChatMessageManager : MonoBehaviour
         }
 
         yield return new WaitForSeconds(sequence.delay);
+
+        if (chatMessageHintGO.IsNotNull() && !chatBox.activeSelf)
+        {
+            chatMessageHintGO.SetActive(true);
+        }
 
         sequence.onSequenceStarted?.Invoke();
         inputingPromptGO.SetActive(true);

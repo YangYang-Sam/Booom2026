@@ -122,8 +122,9 @@ public class WatchEvent : MonoBehaviour
             return;
 
         bool hit = false;
-        foreach (var raycastHit in viewRaycaster.RaycastHits)
+        for (int i = 0; i < viewRaycaster.HitCount; i++)
         {
+            var raycastHit = viewRaycaster.RaycastHits[i];
             if (raycastHit.collider == watchCollider)
             {
                 hit = true;

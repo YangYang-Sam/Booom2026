@@ -145,7 +145,7 @@ public class View : MonoBehaviour
 
         if (!hasFusedRotation)
         {
-            fusedRotation = gyroRotation;
+            fusedRotation = gyroRotation; 
             hasFusedRotation = true;
         }
         else

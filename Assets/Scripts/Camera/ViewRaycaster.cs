@@ -10,6 +10,7 @@ public class ViewRaycaster : MonoSingleton<ViewRaycaster>
 
     RaycastHit[] raycastHits = new RaycastHit[10];
 
+    public int HitCount { get; private set; }
     public IReadOnlyList<RaycastHit> RaycastHits => raycastHits;
 
     public Camera ViewCamera
@@ -46,6 +47,6 @@ public class ViewRaycaster : MonoSingleton<ViewRaycaster>
     private void Update()
     {
         Ray ray = ViewCamera.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0f));
-        int hitCount = Physics.RaycastNonAlloc(ray, raycastHits, 100f, raycastLayerMask);
+        HitCount = Physics.RaycastNonAlloc(ray, raycastHits, 100f, raycastLayerMask);
     }
 }
