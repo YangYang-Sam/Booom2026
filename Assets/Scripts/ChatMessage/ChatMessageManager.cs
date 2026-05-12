@@ -2,9 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using JTUtility;
-using TMPro;
 using UnityEngine;
-using UnityEngine.AI;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
@@ -63,6 +61,7 @@ public class ChatMessageManager : MonoBehaviour
 
     [SerializeField] ConnectionDeterminator connectionDeterminator;
     [SerializeField] Transform verticleLayoutSpace;
+    [SerializeField] GameObject inputingPromptGO;
 
     [Space]
     [SerializeField] ChatMessageUnit chatMessageUnitPrefab;
@@ -75,6 +74,9 @@ public class ChatMessageManager : MonoBehaviour
     [Space]
     [SerializeField] ChatMessageChoiceGroup chatMessageChoiceGroupPrefab;
     [SerializeField] Transform chatMessageChoiceGroupParent;
+
+    [Space]
+    [SerializeField] ChatMessageTimestamp chatMessageTimestampPrefab;
 
     [Space]
     [SerializeField] ScrollRect chatMessageScrollRect;
@@ -244,6 +246,12 @@ public class ChatMessageManager : MonoBehaviour
         }
     }
 
+    public void InsertChatMessageTimestamp(string timestamp)
+    {
+        ChatMessageTimestamp chatMessageTimestamp = Instantiate(chatMessageTimestampPrefab, chatMessageUnitParent);
+        chatMessageTimestamp.Setup(timestamp);
+    }
+
     public void OnTalkButtonClicked()
     {
         if (currentTalkResponseSequence != null)
@@ -352,6 +360,7 @@ public class ChatMessageManager : MonoBehaviour
         yield return new WaitForSeconds(sequence.delay);
 
         sequence.onSequenceStarted?.Invoke();
+        inputingPromptGO.SetActive(true);
 
         var time = 0f;
         for (int i = 0; i < sequence.messages.Count; i++)
@@ -371,6 +380,7 @@ public class ChatMessageManager : MonoBehaviour
 
         chatMessageSequenceCoroutine = null;
         sequence.onSequenceFinished?.Invoke();
+        inputingPromptGO.SetActive(false);
     }
 
     IEnumerator TalkSequenceCoroutine()
