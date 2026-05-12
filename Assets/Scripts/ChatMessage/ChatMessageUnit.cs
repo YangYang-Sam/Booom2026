@@ -13,6 +13,7 @@ public class ChatMessageUnit : MonoBehaviour
     [SerializeField] TMP_Text ownerNameText;
     [SerializeField] Image ownerIconImage;
     [SerializeField] bool sendFromSelf = false;
+    [SerializeField] SFXPlayer sfxPlayer;
 
     void OnEnable()
     {
@@ -72,6 +73,11 @@ public class ChatMessageUnit : MonoBehaviour
         else
         {
             SetSendFromSelf();
+        }
+
+        if (sfxPlayer != null && !sendFromSelf)
+        {
+            sfxPlayer.PlaySFX2();
         }
     }
 }

@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 3153783865953958443}
   - component: {fileID: 718903022473538465}
   - component: {fileID: 6881390462078391941}
+  - component: {fileID: 4767333653281011305}
   m_Layer: 5
   m_Name: ChatMessageUnit
   m_TagString: Untagged
@@ -179,6 +180,26 @@ MonoBehaviour:
   messageText: {fileID: 2651811045242818181}
   ownerNameText: {fileID: 1971823418263704946}
   ownerIconImage: {fileID: 1103889929150701348}
+  sendFromSelf: 0
+  sfxPlayer: {fileID: 4767333653281011305}
+--- !u!114 &4767333653281011305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842646247417180710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306265cd902eae345bd889a05f23bc28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxClips:
+  - {fileID: 8300000, guid: 75b0c14107977504781ceee36f32a361, type: 3}
+  playOnEnable: 0
+  playOnDisable: 0
+  playOnStart: 0
+  playOnDestroy: 0
 --- !u!1 &2416528367539775225
 GameObject:
   m_ObjectHideFlags: 0
