@@ -52,8 +52,11 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        musicSource.clip = normalBgm;
-        musicSource.Play();
+        if (musicSource != null)
+        {
+            musicSource.clip = normalBgm;
+            musicSource.Play();
+        }
     }
 
     void Update()

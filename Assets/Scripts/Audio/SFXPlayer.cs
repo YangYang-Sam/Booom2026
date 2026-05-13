@@ -74,8 +74,11 @@ public class SFXPlayer : MonoBehaviour
     {
         foreach (var sfxSource in sfxSources)
         {
-            sfxSource.Stop();
-            Destroy(sfxSource);
+            if (sfxSource.IsNotNull())
+            {
+                sfxSource.Stop();
+                Destroy(sfxSource);
+            }
         }
 
         sfxSources.Clear();
