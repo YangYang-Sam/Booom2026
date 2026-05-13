@@ -7295,7 +7295,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &410087040
 Light:
   m_ObjectHideFlags: 0
@@ -11380,6 +11380,80 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 324046353816309995, guid: e2064baad66bd8b468739a8793adb146,
     type: 3}
   m_PrefabInstance: {fileID: 694982395}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &695134694
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1953201954}
+    m_Modifications:
+    - target: {fileID: 357259906845854498, guid: 0ffef52678ece314ba7ac369e1db6103,
+        type: 3}
+      propertyPath: m_Name
+      value: SubwayCabin
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643539833106633749, guid: 0ffef52678ece314ba7ac369e1db6103,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643539833106633749, guid: 0ffef52678ece314ba7ac369e1db6103,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643539833106633749, guid: 0ffef52678ece314ba7ac369e1db6103,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643539833106633749, guid: 0ffef52678ece314ba7ac369e1db6103,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643539833106633749, guid: 0ffef52678ece314ba7ac369e1db6103,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643539833106633749, guid: 0ffef52678ece314ba7ac369e1db6103,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643539833106633749, guid: 0ffef52678ece314ba7ac369e1db6103,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643539833106633749, guid: 0ffef52678ece314ba7ac369e1db6103,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643539833106633749, guid: 0ffef52678ece314ba7ac369e1db6103,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5643539833106633749, guid: 0ffef52678ece314ba7ac369e1db6103,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0ffef52678ece314ba7ac369e1db6103, type: 3}
+--- !u!4 &695134695 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5643539833106633749, guid: 0ffef52678ece314ba7ac369e1db6103,
+    type: 3}
+  m_PrefabInstance: {fileID: 695134694}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &700467038
 GameObject:
@@ -17042,12 +17116,12 @@ GameObject:
   m_Component:
   - component: {fileID: 1017937612}
   m_Layer: 0
-  m_Name: SubwayCabin
+  m_Name: SubwayCabinOld
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1017937612
 Transform:
   m_ObjectHideFlags: 0
@@ -23380,6 +23454,80 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   connectionDeterminator: {fileID: 1638749580}
+--- !u!1001 &1440079471
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1953201954}
+    m_Modifications:
+    - target: {fileID: 4137690448229885268, guid: 4b7ee6551bc0747448be85f6ccb15691,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137690448229885268, guid: 4b7ee6551bc0747448be85f6ccb15691,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137690448229885268, guid: 4b7ee6551bc0747448be85f6ccb15691,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137690448229885268, guid: 4b7ee6551bc0747448be85f6ccb15691,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137690448229885268, guid: 4b7ee6551bc0747448be85f6ccb15691,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137690448229885268, guid: 4b7ee6551bc0747448be85f6ccb15691,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137690448229885268, guid: 4b7ee6551bc0747448be85f6ccb15691,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137690448229885268, guid: 4b7ee6551bc0747448be85f6ccb15691,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137690448229885268, guid: 4b7ee6551bc0747448be85f6ccb15691,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4137690448229885268, guid: 4b7ee6551bc0747448be85f6ccb15691,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5942147857947387501, guid: 4b7ee6551bc0747448be85f6ccb15691,
+        type: 3}
+      propertyPath: m_Name
+      value: LightGroup
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4b7ee6551bc0747448be85f6ccb15691, type: 3}
+--- !u!4 &1440079472 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4137690448229885268, guid: 4b7ee6551bc0747448be85f6ccb15691,
+    type: 3}
+  m_PrefabInstance: {fileID: 1440079471}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1441706350
 GameObject:
   m_ObjectHideFlags: 0
@@ -26361,7 +26509,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1575025046
 Transform:
   m_ObjectHideFlags: 0
@@ -33365,6 +33513,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 992763040}
+  - {fileID: 1440079472}
+  - {fileID: 695134695}
   - {fileID: 1017937612}
   - {fileID: 1575025046}
   m_Father: {fileID: 0}

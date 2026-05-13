@@ -194,10 +194,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 5643539833106633749}
     m_Modifications:
+    - target: {fileID: 2025064171633649171, guid: 133c6c85ee8d3f5428e507cc3d0091bb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 2176073277062509482, guid: 133c6c85ee8d3f5428e507cc3d0091bb,
         type: 3}
       propertyPath: m_Name
       value: ChairHolder
+      objectReference: {fileID: 0}
+    - target: {fileID: 6952150258591489265, guid: 133c6c85ee8d3f5428e507cc3d0091bb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7013398700705084824, guid: 133c6c85ee8d3f5428e507cc3d0091bb,
         type: 3}
