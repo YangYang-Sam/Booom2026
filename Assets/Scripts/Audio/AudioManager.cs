@@ -92,6 +92,7 @@ public class AudioManager : MonoBehaviour
             Debug.LogError($"SFX: \"{clipName}\" not found");
         }
     }
+    
     public AudioSource PlayLoopSFX(AudioClip clip)
     {
         var sfxSource = gameObject.AddComponent<AudioSource>();

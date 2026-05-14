@@ -176,7 +176,7 @@ public class ChatMessageManager : MonoBehaviour
         verticleLayoutSpace.SetAsLastSibling();
     }
 
-    private void SendTalkMessage(ChatMessage chatMessage)
+    private void SendTalkMessage(string sequenceId, ChatMessage chatMessage)
     {
         if (chatMessage == null)
         {
@@ -190,6 +190,11 @@ public class ChatMessageManager : MonoBehaviour
         if (currentTalkMessageUnit != null && currentTalkMessageUnit.gameObject.activeSelf)
         {
             currentTalkMessageUnit.gameObject.SetActive(false);
+        }
+
+        if (!string.IsNullOrEmpty(chatMessage.id) && AudioManager.instance != null)
+        {
+            AudioManager.instance.PlaySFX(sequenceId + "-" + chatMessage.id);
         }
 
         currentTalkMessageUnit = talkMessageUnit;
@@ -420,7 +425,7 @@ public class ChatMessageManager : MonoBehaviour
         var time = 0f;
         for (int i = 0; i < sequence.messages.Count; i++)
         {
-            SendTalkMessage(sequence.messages[i]);
+            SendTalkMessage(sequence.id, sequence.messages[i]);
             time = sequence.messages[i].time;
 
             while (time > 0)

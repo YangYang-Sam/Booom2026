@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using JTUtility;
+using Unity.VisualScripting.Antlr3.Runtime.Tree;
 
 public class ConnectionDeterminator : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class ConnectionDeterminator : MonoBehaviour
 
     void OnEnable()
     {
-        StartCoroutine(UpdateOnEnable());
+        //StartCoroutine(UpdateOnEnable());
     }
 
     private void Update()
@@ -53,6 +54,27 @@ public class ConnectionDeterminator : MonoBehaviour
                 OnDisconnected?.Invoke();
             }
         }
+    }
+
+    public void SetConnection(bool isConnected)
+    {
+        this.isConnected = isConnected;
+        lastStableTime = timeThreshold;
+        if (isConnected)
+        {
+            onConnected.Invoke();
+            OnConnected?.Invoke();
+        }
+        else
+        {
+            onDisconnected.Invoke();
+            OnDisconnected?.Invoke();
+        }
+    }
+
+    public void SetTimeThreshold(float timeThreshold)
+    {
+        this.timeThreshold = timeThreshold;
     }
 
     private bool ShouldConnect()
