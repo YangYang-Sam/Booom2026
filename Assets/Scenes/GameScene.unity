@@ -11685,6 +11685,7 @@ Transform:
   - {fileID: 247343154}
   - {fileID: 56315661}
   - {fileID: 752658078}
+  - {fileID: 1453798362}
   - {fileID: 1837691343}
   - {fileID: 741364628}
   - {fileID: 857229445}
@@ -13850,7 +13851,7 @@ MonoBehaviour:
       id: 
       ownerId: child
       time: 3
-    - message: "\u4F60\u5730\u94C1\u91CC\u5230\u4E86\u5417\uFF1F"
+    - message: "\u4F60\u5230\u5730\u94C1\u91CC\u4E86\u5417\uFF1F"
       id: 
       ownerId: child
       time: 2
@@ -14154,7 +14155,7 @@ MonoBehaviour:
       id: 
       ownerId: child
       time: 4
-    - message: "\u6211\u5728\u624B\u673A\u4E0A\u67E5\u4E86\uFF0C\u7237\u7237\u60F3\u53BB\u7684\u5730\u65B9\uFF0C\u5E94\u8BE5\u5728\u4E0B\u7AD9\u4E0B\u8F66\u4E86\u3002"
+    - message: "\u6211\u5728\u624B\u673A\u4E0A\u67E5\u4E86\uFF0C\u7237\u7237\u60F3\u53BB\u7684\u5730\u65B9\uFF0C\u5728\u4E0B\u7AD9\u4E0B\u8F66\u3002"
       id: 
       ownerId: child
       time: 5
@@ -14270,7 +14271,7 @@ MonoBehaviour:
   - id: talk1_2
     delay: 0
     messages:
-    - message: "\u96BE\u5F97\u6709\u4EBA\u624B\u673A\u4E0D\u662F\u7C98\u5728\u8138\u4E0A\u7684\uFF0C\u4F60\u627E\u6211\u6709\u4E8B\uFF1F"
+    - message: "\u8001\u4EBA\uFF1A\u96BE\u5F97\u6709\u4EBA\u624B\u673A\u4E0D\u662F\u7C98\u5728\u8138\u4E0A\u7684\uFF0C\u4F60\u627E\u6211\u6709\u4E8B\uFF1F"
       id: 
       ownerId: 
       time: 5
@@ -14320,11 +14321,11 @@ MonoBehaviour:
   - id: talk1_4
     delay: 0
     messages:
-    - message: "\u54FC\u3002\u6709\u4EC0\u4E48\u4E8B\u60C5\uFF0C\u5C31\u4E0D\u80FD\u76F4\u63A5\u8BF4\u5417\uFF1F"
+    - message: "\u8001\u4EBA\uFF1A\u54FC\u3002\u6709\u4EC0\u4E48\u4E8B\u60C5\uFF0C\u5C31\u4E0D\u80FD\u76F4\u63A5\u8BF4\u5417\uFF1F"
       id: 
       ownerId: 
       time: 5
-    - message: "\u975E\u8981\u548C\u4F60\u4EEC\u4E00\u6837\uFF0C\u628A\u624B\u673A\u7C98\u5728\u8138\u4E0A\u5417\uFF1F"
+    - message: "\u8001\u4EBA\uFF1A\u975E\u8981\u548C\u4F60\u4EEC\u4E00\u6837\uFF0C\u628A\u624B\u673A\u7C98\u5728\u8138\u4E0A\u5417\uFF1F"
       id: 
       ownerId: 
       time: 5
@@ -14361,7 +14362,7 @@ MonoBehaviour:
   - id: talk2_1
     delay: 0
     messages:
-    - message: "\u5927\u7237\uFF0C\u5B59\u5B50\u7ED9\u60A8\u65B0\u4E70\u7684\u624B\u673A\uFF0C\u633A\u597D\u7684\u600E\u4E48\u4E0D\u7528\u5462\uFF1F"
+    - message: "\u5927\u7237\uFF0C\u5B59\u5B50\u7ED9\u60A8\u65B0\u4E70\u7684\u624B\u673A\uFF0C\u60A8\u600E\u4E48\u4E0D\u7528\u5462\uFF1F"
       id: 
       ownerId: 
       time: 3
@@ -14386,14 +14387,18 @@ MonoBehaviour:
   - id: talk2_2
     delay: 0
     messages:
-    - message: "\u5C0F\u540C\u5FD7\uFF0C\u4F60\u770B\u770B\u8FD9\u56DB\u5468\u3002"
+    - message: "\u8001\u4EBA\uFF1A\u5C0F\u540C\u5FD7\uFF0C\u4F60\u770B\u770B\u8FD9\u56DB\u5468\u3002"
       id: 
       ownerId: 
       time: 3
-    - message: "\u4F60\u6CA1\u89C9\u5F97\u4E0D\u5BF9\u52B2\u5417\uFF1F"
+    - message: "\u8001\u4EBA\uFF1A\u4F60\u6CA1\u89C9\u5F97\u4E0D\u5BF9\u52B2\u5417\uFF1F"
       id: 
       ownerId: 
       time: 3
+    - message: "\u56DB\u5468\uFF1F\u6211\u770B\u770B\u5468\u56F4\u600E\u4E48\u4E86\u3002"
+      id: 
+      ownerId: 
+      time: 5
     onSequenceStarted:
       m_PersistentCalls:
         m_Calls: []
@@ -14440,23 +14445,23 @@ MonoBehaviour:
   - id: talk2_4
     delay: 0
     messages:
-    - message: "\u53EF\u4F60\u770B\u8FD9\u4E00\u8F66\u4EBA\u3002"
+    - message: "\u8001\u4EBA\uFF1A\u53EF\u4F60\u770B\u8FD9\u4E00\u8F66\u4EBA\u3002"
       id: 
       ownerId: 
       time: 2
-    - message: "\u6CA1\u4E00\u4E2A\u62AC\u5934\u3002"
+    - message: "\u8001\u4EBA\uFF1A\u6CA1\u4E00\u4E2A\u62AC\u5934\u3002"
       id: 
       ownerId: 
       time: 3
-    - message: "\u4EBA\u90FD\u5728\u8FD9\u513F\u3002"
+    - message: "\u8001\u4EBA\uFF1A\u4EBA\u90FD\u5728\u8FD9\u513F\u3002"
       id: 
       ownerId: 
       time: 3
-    - message: "\u773C\u795E\u5374\u90FD\u4E0D\u5728\u3002"
+    - message: "\u8001\u4EBA\uFF1A\u773C\u795E\u5374\u90FD\u4E0D\u5728\u3002"
       id: 
       ownerId: 
       time: 3
-    - message: "\u6211\u7684\u5B59\u5B50\uFF0C\u4E5F\u662F\u7ED9\u8FD9\u4E1C\u897F\u52FE\u4E86\u9B42\uFF01"
+    - message: "\u8001\u4EBA\uFF1A\u6211\u7684\u5B59\u5B50\uFF0C\u4E5F\u662F\u7ED9\u8FD9\u4E1C\u897F\u52FE\u4E86\u9B42\uFF01"
       id: 
       ownerId: 
       time: 3
@@ -14514,19 +14519,19 @@ MonoBehaviour:
   - id: talk3_2
     delay: 0
     messages:
-    - message: "\u5230\u4E86\uFF1F\u8FD9\u4E48\u5FEB\uFF1F"
+    - message: "\u8001\u4EBA\uFF1A\u5230\u4E86\uFF1F\u8FD9\u4E48\u5FEB\uFF1F"
       id: 
       ownerId: 
       time: 2
-    - message: "\u5509\uFF0C\u5E74\u8F7B\u4EBA\u554A\uFF0C\u4EE5\u524D\u53BB\u54EA\u90FD\u662F\u76F4\u63A5\u8D70\uFF0C\u8BF4\u8BDD\u4E5F\u662F\u76F4\u63A5\u8BF4\u3002"
+    - message: "\u8001\u4EBA\uFF1A\u5509\uFF0C\u5E74\u8F7B\u4EBA\u554A\uFF0C\u4EE5\u524D\u53BB\u54EA\u90FD\u662F\u76F4\u63A5\u8D70\uFF0C\u8BF4\u8BDD\u4E5F\u662F\u76F4\u63A5\u8BF4\u3002"
       id: 
       ownerId: 
       time: 3
-    - message: "\u73B0\u5728\u600E\u4E48\u4E00\u76F4\u76EF\u7740\u90A3\u4E2A\u5C4F\u5E55\uFF0C\u4E5F\u4E0D\u76F4\u63A5\u8BF4\u8BDD\uFF0C\u4EBA\u90FD\u4E0D\u5728\u8FD9\u4E86\u3002"
+    - message: "\u8001\u4EBA\uFF1A\u73B0\u5728\u600E\u4E48\u4E00\u76F4\u76EF\u7740\u90A3\u4E2A\u5C4F\u5E55\uFF0C\u4E5F\u4E0D\u76F4\u63A5\u8BF4\u8BDD\uFF0C\u4EBA\u90FD\u4E0D\u5728\u8FD9\u4E86\u3002"
       id: 
       ownerId: 
       time: 4
-    - message: "\u5B59\u513F\uFF0C\u6211\u4EEC\u4E0B\u8F66\u5427\u3002"
+    - message: "\u8001\u4EBA\uFF1A\u5B59\u513F\uFF0C\u6211\u4EEC\u4E0B\u8F66\u5427\u3002"
       id: 
       ownerId: 
       time: 2
@@ -14660,7 +14665,7 @@ MonoBehaviour:
           m_CallState: 2
   - id: chat3_1
     choices:
-    - id: 1
+    - id: 5
       choiceText: "\u4ED6\u89C9\u5F97\u4E0D\u5BF9\u52B2\uFF0C\u8BF4\u4F60\u4EEC\u90FD\u88AB\u624B\u673A\u8FDE\u63A5\u52FE\u4E86\u9B42\u3002"
       messageId: self6
     onChoiceGroupSelected:
@@ -32821,7 +32826,7 @@ PrefabInstance:
     - target: {fileID: 6683397323299341411, guid: 852eb75178bf469489f4e8d5a61584eb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.976
+      value: -0.882
       objectReference: {fileID: 0}
     - target: {fileID: 6683397323299341411, guid: 852eb75178bf469489f4e8d5a61584eb,
         type: 3}
@@ -32831,7 +32836,7 @@ PrefabInstance:
     - target: {fileID: 6683397323299341411, guid: 852eb75178bf469489f4e8d5a61584eb,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.32
+      value: 0.423
       objectReference: {fileID: 0}
     - target: {fileID: 6683397323299341411, guid: 852eb75178bf469489f4e8d5a61584eb,
         type: 3}
@@ -35062,6 +35067,80 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3582805925596223530, guid: e74f08bdfcbc4ab45afcb68a31cfc8f5,
     type: 3}
   m_PrefabInstance: {fileID: 1446514240}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1453798361
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 532414576}
+    m_Modifications:
+    - target: {fileID: 3907557100921586523, guid: f062f5b6b974f404c96281648e866561,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907557100921586523, guid: f062f5b6b974f404c96281648e866561,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.086
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907557100921586523, guid: f062f5b6b974f404c96281648e866561,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.346
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907557100921586523, guid: f062f5b6b974f404c96281648e866561,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.67982787
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907557100921586523, guid: f062f5b6b974f404c96281648e866561,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907557100921586523, guid: f062f5b6b974f404c96281648e866561,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7333718
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907557100921586523, guid: f062f5b6b974f404c96281648e866561,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907557100921586523, guid: f062f5b6b974f404c96281648e866561,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907557100921586523, guid: f062f5b6b974f404c96281648e866561,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 94.34
+      objectReference: {fileID: 0}
+    - target: {fileID: 3907557100921586523, guid: f062f5b6b974f404c96281648e866561,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4427529736915048929, guid: f062f5b6b974f404c96281648e866561,
+        type: 3}
+      propertyPath: m_Name
+      value: kid2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f062f5b6b974f404c96281648e866561, type: 3}
+--- !u!4 &1453798362 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3907557100921586523, guid: f062f5b6b974f404c96281648e866561,
+    type: 3}
+  m_PrefabInstance: {fileID: 1453798361}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1461565878
 GameObject:
@@ -45536,6 +45615,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: People_Sir2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5784250240045837778, guid: 6ad89ff968f68fb42b9ea9f697e2df38,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5784250240045837778, guid: 6ad89ff968f68fb42b9ea9f697e2df38,
         type: 3}
