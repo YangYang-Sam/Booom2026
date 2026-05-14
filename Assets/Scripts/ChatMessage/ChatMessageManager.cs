@@ -59,6 +59,7 @@ public class ChatMessageManager : MonoBehaviour
     [SerializeField] GameObject chatMessageHintGO;
     [SerializeField] Button talkButton;
     [SerializeField] GameObject talkButtonGO;
+    [SerializeField] GameObject talkMessageHintGO;
 
     [SerializeField] ConnectionDeterminator connectionDeterminator;
     [SerializeField] Transform verticleLayoutSpace;
@@ -248,7 +249,12 @@ public class ChatMessageManager : MonoBehaviour
         currentTalkResponseSequence = sequence;
         if (!connectionDeterminator.IsConnected)
         {
-            talkButtonGO.SetActive(true);
+            //talkButtonGO.SetActive(true);
+        }
+
+        if (talkMessageHintGO.IsNotNull())
+        {
+            talkMessageHintGO.SetActive(true);
         }
     }
 
@@ -264,7 +270,12 @@ public class ChatMessageManager : MonoBehaviour
         {
             QueueTalkSequence(currentTalkResponseSequence.id);
             currentTalkResponseSequence = null;
-            talkButtonGO.SetActive(false);
+            //talkButtonGO.SetActive(false);
+        }
+
+        if (talkMessageHintGO.IsNotNull())
+        {
+            talkMessageHintGO.SetActive(false);
         }
     }
 
@@ -325,14 +336,19 @@ public class ChatMessageManager : MonoBehaviour
             chatButton.interactable = true;
         }
 
+        if (talkButton.IsNotNull())
+        {
+            talkButton.interactable = false;
+        }
+
         if (chatButtonGO.IsNotNull())
         {
-            chatButtonGO.SetActive(true);
+            //chatButtonGO.SetActive(true);
         }
 
         if (talkButtonGO.IsNotNull())
         {
-            talkButtonGO.SetActive(false);
+            //talkButtonGO.SetActive(false);
         }
     }
 
@@ -348,14 +364,19 @@ public class ChatMessageManager : MonoBehaviour
             chatButton.interactable = false;
         }
 
+        if (talkButton.IsNotNull())
+        {
+            talkButton.interactable = true;
+        }
+
         if (chatButtonGO.IsNotNull())
         {
-            chatButtonGO.SetActive(false);
+            //chatButtonGO.SetActive(false);
         }
 
         if (currentTalkResponseSequence != null && talkButtonGO.IsNotNull())
         {
-            talkButtonGO.SetActive(true);
+            //talkButtonGO.SetActive(true);
         }
     }
 

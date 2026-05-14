@@ -86,7 +86,7 @@ PrefabInstance:
     - target: {fileID: 599079131543176588, guid: aec1f9314bac4e24dbad069ab1743f75,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -355
       objectReference: {fileID: 0}
     - target: {fileID: 599079131543176588, guid: aec1f9314bac4e24dbad069ab1743f75,
         type: 3}
@@ -110,13 +110,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1286427127453653460, guid: aec1f9314bac4e24dbad069ab1743f75,
         type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ecde0e747d12a3740b151435077b391e,
+        type: 3}
+    - target: {fileID: 1286427127453653460, guid: aec1f9314bac4e24dbad069ab1743f75,
+        type: 3}
       propertyPath: m_Color.b
-      value: 0.7371967
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1286427127453653460, guid: aec1f9314bac4e24dbad069ab1743f75,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.8247978
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1286427127453653460, guid: aec1f9314bac4e24dbad069ab1743f75,
         type: 3}
@@ -126,12 +132,12 @@ PrefabInstance:
     - target: {fileID: 3904243136511173311, guid: aec1f9314bac4e24dbad069ab1743f75,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 200
+      value: 190
       objectReference: {fileID: 0}
     - target: {fileID: 3904243136511173311, guid: aec1f9314bac4e24dbad069ab1743f75,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 200
+      value: 190
       objectReference: {fileID: 0}
     - target: {fileID: 3904243136511173311, guid: aec1f9314bac4e24dbad069ab1743f75,
         type: 3}
@@ -141,7 +147,7 @@ PrefabInstance:
     - target: {fileID: 3904243136511173311, guid: aec1f9314bac4e24dbad069ab1743f75,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 4.2
       objectReference: {fileID: 0}
     - target: {fileID: 4634624492400654584, guid: aec1f9314bac4e24dbad069ab1743f75,
         type: 3}
@@ -162,17 +168,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: db6340fcf1ca0cf46a6bd60f5fc52217,
+      objectReference: {fileID: 21300000, guid: d89bdd13641f8aa49a4bba27533a7421,
         type: 3}
     - target: {fileID: 4707566549420979418, guid: aec1f9314bac4e24dbad069ab1743f75,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.65633416
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4707566549420979418, guid: aec1f9314bac4e24dbad069ab1743f75,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.75256056
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4707566549420979418, guid: aec1f9314bac4e24dbad069ab1743f75,
         type: 3}
@@ -187,5 +193,36 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6340261750279148739, guid: aec1f9314bac4e24dbad069ab1743f75,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7151882819820744026}
   m_SourcePrefab: {fileID: 100100000, guid: aec1f9314bac4e24dbad069ab1743f75, type: 3}
+--- !u!1 &4266113636942961153 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6340261750279148739, guid: aec1f9314bac4e24dbad069ab1743f75,
+    type: 3}
+  m_PrefabInstance: {fileID: 7838908534959754946}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7151882819820744026
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4266113636942961153}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f881a462efddaa14396852c09ff8bf94, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
