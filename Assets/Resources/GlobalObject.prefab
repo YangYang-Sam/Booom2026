@@ -57,14 +57,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe69fbdfaa6b49c4ab0062deaf956675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSource: {fileID: 0}
-  sfxClips: []
+  sfxClips:
+  - {fileID: 8300000, guid: ae62b5e06638e3740b9eef0e67976215, type: 3}
+  - {fileID: 8300000, guid: 5811755a030d93a468c7d7fb483e487d, type: 3}
+  - {fileID: 8300000, guid: 0a4ab7bd41355834f86898c69ba8effa, type: 3}
+  - {fileID: 8300000, guid: 9b1778e356885414a9e7cf8a3eb5b2a7, type: 3}
+  - {fileID: 8300000, guid: 84962872775435f479b2230cff83f437, type: 3}
+  - {fileID: 8300000, guid: 992f66a47d252c448a6adec1ccfcd259, type: 3}
+  - {fileID: 8300000, guid: a6df945ec87296c438bd281e8c564a05, type: 3}
+  - {fileID: 8300000, guid: e3261cbdf8c02dc4590ee10ecc62778c, type: 3}
+  - {fileID: 8300000, guid: 5c57855ffe35910469849ba689c6d0aa, type: 3}
+  - {fileID: 8300000, guid: f3851aa177a6d864aa8c6b62badfc96a, type: 3}
+  - {fileID: 8300000, guid: b66279aed152da64a825cc1404e6ba96, type: 3}
+  - {fileID: 8300000, guid: a1487988fbfc5a542b985f0651915d95, type: 3}
+  - {fileID: 8300000, guid: f152efd727eac7b48bea87b08cc4701d, type: 3}
+  - {fileID: 8300000, guid: a4fd8247426719544b27cf0db7377da3, type: 3}
+  - {fileID: 8300000, guid: a8614726718f1d84e919a5a83c246728, type: 3}
+  - {fileID: 8300000, guid: d758a3f30085f974d99183aa8b1d68f5, type: 3}
   normalBgm: {fileID: 0}
-  bossIntro: {fileID: 0}
-  bossLoop: {fileID: 0}
-  flyIntro: {fileID: 0}
-  flyLoop: {fileID: 0}
-  normalBgmVolume: 0
-  bossBgmVolume: 0
-  flyBgmVolume: 0
+  bgmVolume: 0.5
   fadeTime: 2
