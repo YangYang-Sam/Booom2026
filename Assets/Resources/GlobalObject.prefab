@@ -57,7 +57,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe69fbdfaa6b49c4ab0062deaf956675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSource: {fileID: 0}
   sfxClips:
   - {fileID: 8300000, guid: ae62b5e06638e3740b9eef0e67976215, type: 3}
   - {fileID: 8300000, guid: 5811755a030d93a468c7d7fb483e487d, type: 3}
@@ -76,11 +75,5 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a8614726718f1d84e919a5a83c246728, type: 3}
   - {fileID: 8300000, guid: d758a3f30085f974d99183aa8b1d68f5, type: 3}
   normalBgm: {fileID: 0}
-  bossIntro: {fileID: 0}
-  bossLoop: {fileID: 0}
-  flyIntro: {fileID: 0}
-  flyLoop: {fileID: 0}
-  normalBgmVolume: 0
-  bossBgmVolume: 0
-  flyBgmVolume: 0
+  bgmVolume: 0.5
   fadeTime: 2
