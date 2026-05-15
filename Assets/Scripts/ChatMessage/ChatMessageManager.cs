@@ -195,7 +195,7 @@ public class ChatMessageManager : MonoBehaviour
 
         if (!string.IsNullOrEmpty(chatMessage.id) && AudioManager.instance != null)
         {
-            AudioManager.instance.PlaySFX(sequenceId + "-" + chatMessage.id);
+            AudioManager.instance.PlaySFX(chatMessage.id);
         }
 
         currentTalkMessageUnit = talkMessageUnit;

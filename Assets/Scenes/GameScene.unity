@@ -7106,7 +7106,7 @@ PrefabInstance:
     - target: {fileID: 7251784054510588302, guid: e74f08bdfcbc4ab45afcb68a31cfc8f5,
         type: 3}
       propertyPath: m_text
-      value: "\u6216\u8BB8\u6211\u5E94\u8BE5\u3010\u653E\u4E0B\u3011\u624B\u673A\uFF0C\u548C\u4ED6\u76F4\u63A5\u4EA4\u6D41\u3002"
+      value: "\uFF08\u6216\u8BB8\u6211\u5E94\u8BE5\u3010\u653E\u4E0B\u3011\u624B\u673A\uFF0C\u548C\u4ED6\u76F4\u63A5\u4EA4\u6D41\u3002\uFF09"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13610,7 +13610,7 @@ MonoBehaviour:
     delay: 0
     messages:
     - message: "\u8001\u4EBA\uFF1A\u96BE\u5F97\u6709\u4EBA\u624B\u673A\u4E0D\u662F\u7C98\u5728\u8138\u4E0A\u7684\uFF0C\u4F60\u627E\u6211\u6709\u4E8B\uFF1F"
-      id: 
+      id: "\u96BE\u5F97\u6709\u4EBA\u624B\u673A\u4E0D\u662F\u7C98\u5728\u8138\u4E0A\u7684\uFF0C\u4F60\u627E\u6211\u6709\u4E8B"
       ownerId: 
       time: 5
     onSequenceStarted:
@@ -13660,11 +13660,11 @@ MonoBehaviour:
     delay: 0
     messages:
     - message: "\u8001\u4EBA\uFF1A\u54FC\u3002\u6709\u4EC0\u4E48\u4E8B\u60C5\uFF0C\u5C31\u4E0D\u80FD\u76F4\u63A5\u8BF4\u5417\uFF1F"
-      id: 
+      id: "\u54FC\u3002\u6709\u4EC0\u4E48\u4E8B\u60C5\uFF0C\u5C31\u4E0D\u80FD\u76F4\u63A5\u8BF4\u5417"
       ownerId: 
       time: 5
     - message: "\u8001\u4EBA\uFF1A\u975E\u8981\u548C\u4F60\u4EEC\u4E00\u6837\uFF0C\u628A\u624B\u673A\u7C98\u5728\u8138\u4E0A\u5417\uFF1F"
-      id: 
+      id: "\u975E\u8981\u548C\u4F60\u4EEC\u4E00\u6837\uFF0C\u628A\u624B\u673A\u7C98\u5728\u8138\u4E0A\u5417"
       ownerId: 
       time: 5
     onSequenceStarted:
@@ -13726,17 +13726,17 @@ MonoBehaviour:
     delay: 0
     messages:
     - message: "\u8001\u4EBA\uFF1A\u5C0F\u540C\u5FD7\uFF0C\u4F60\u770B\u770B\u8FD9\u56DB\u5468\u3002"
-      id: 
+      id: "\u5C0F\u540C\u5FD7\uFF0C\u4F60\u770B\u770B\u8FD9\u56DB\u5468"
       ownerId: 
-      time: 3
+      time: 4
     - message: "\u8001\u4EBA\uFF1A\u4F60\u6CA1\u89C9\u5F97\u4E0D\u5BF9\u52B2\u5417\uFF1F"
+      id: "\u4F60\u6CA1\u89C9\u5F97\u4E0D\u5BF9\u52B2\u5417"
+      ownerId: 
+      time: 2
+    - message: "\uFF08\u56DB\u5468\uFF1F\u6211\u770B\u770B\u5468\u56F4\u600E\u4E48\u4E86\u3002\uFF09"
       id: 
       ownerId: 
       time: 3
-    - message: "\u56DB\u5468\uFF1F\u6211\u770B\u770B\u5468\u56F4\u600E\u4E48\u4E86\u3002"
-      id: 
-      ownerId: 
-      time: 5
     onSequenceStarted:
       m_PersistentCalls:
         m_Calls: []
@@ -13784,25 +13784,25 @@ MonoBehaviour:
     delay: 0
     messages:
     - message: "\u8001\u4EBA\uFF1A\u53EF\u4F60\u770B\u8FD9\u4E00\u8F66\u4EBA\u3002"
-      id: 
+      id: "\u53EF\u4F60\u770B\u8FD9\u4E00\u8F66\u4EBA"
       ownerId: 
       time: 2
     - message: "\u8001\u4EBA\uFF1A\u6CA1\u4E00\u4E2A\u62AC\u5934\u3002"
-      id: 
+      id: "\u6CA1\u4E00\u4E2A\u62AC\u5934"
       ownerId: 
-      time: 3
+      time: 2
     - message: "\u8001\u4EBA\uFF1A\u4EBA\u90FD\u5728\u8FD9\u513F\u3002"
-      id: 
+      id: "\u4EBA\u90FD\u5728\u8FD9\u513F"
       ownerId: 
-      time: 3
+      time: 1.5
     - message: "\u8001\u4EBA\uFF1A\u773C\u795E\u5374\u90FD\u4E0D\u5728\u3002"
-      id: 
+      id: "\u773C\u795E\u5374\u90FD\u4E0D\u5728"
       ownerId: 
-      time: 3
+      time: 2
     - message: "\u8001\u4EBA\uFF1A\u6211\u7684\u5B59\u5B50\uFF0C\u4E5F\u662F\u7ED9\u8FD9\u4E1C\u897F\u52FE\u4E86\u9B42\uFF01"
-      id: 
+      id: "\u6211\u7684\u5B59\u5B50\uFF0C\u4E5F\u662F\u7ED9\u8FD9\u4E1C\u897F\u52FE\u4E86\u9B42"
       ownerId: 
-      time: 3
+      time: 4
     onSequenceStarted:
       m_PersistentCalls:
         m_Calls: []
@@ -13858,21 +13858,21 @@ MonoBehaviour:
     delay: 0
     messages:
     - message: "\u8001\u4EBA\uFF1A\u5230\u4E86\uFF1F\u8FD9\u4E48\u5FEB\uFF1F"
-      id: 
+      id: "\u5230\u4E86\u8FD9\u4E48\u5FEB"
       ownerId: 
-      time: 2
+      time: 2.4
     - message: "\u8001\u4EBA\uFF1A\u5509\uFF0C\u5E74\u8F7B\u4EBA\u554A\uFF0C\u4EE5\u524D\u53BB\u54EA\u90FD\u662F\u76F4\u63A5\u8D70\uFF0C\u8BF4\u8BDD\u4E5F\u662F\u76F4\u63A5\u8BF4\u3002"
-      id: 
+      id: "\u5509\uFF0C\u5E74\u8F7B\u4EBA\u554A\uFF0C\u4EE5\u524D\u53BB\u54EA\u90FD\u662F\u76F4\u63A5\u8D70\uFF0C\u8BF4\u8BDD\u4E5F\u662F\u76F4\u63A5\u8BF4"
       ownerId: 
-      time: 3
+      time: 8.4
     - message: "\u8001\u4EBA\uFF1A\u73B0\u5728\u600E\u4E48\u4E00\u76F4\u76EF\u7740\u90A3\u4E2A\u5C4F\u5E55\uFF0C\u4E5F\u4E0D\u76F4\u63A5\u8BF4\u8BDD\uFF0C\u4EBA\u90FD\u4E0D\u5728\u8FD9\u4E86\u3002"
-      id: 
+      id: "\u73B0\u5728\u600E\u4E48\u4E00\u76F4\u76EF\u7740\u90A3\u4E2A\u5C4F\u5E55\uFF0C\u4E5F\u4E0D\u76F4\u63A5\u8BF4\u8BDD\uFF0C\u4EBA\u90FD\u4E0D\u5728\u8FD9\u4E86"
       ownerId: 
-      time: 4
+      time: 6.7
     - message: "\u8001\u4EBA\uFF1A\u5B59\u513F\uFF0C\u6211\u4EEC\u4E0B\u8F66\u5427\u3002"
-      id: 
+      id: "\u5B59\u513F\uFF0C\u6211\u4EEC\u4E0B\u8F66\u5427"
       ownerId: 
-      time: 2
+      time: 2.5
     onSequenceStarted:
       m_PersistentCalls:
         m_Calls: []
@@ -46106,7 +46106,7 @@ PrefabInstance:
     - target: {fileID: 7251784054510588302, guid: e74f08bdfcbc4ab45afcb68a31cfc8f5,
         type: 3}
       propertyPath: m_text
-      value: "\u5927\u7237\u4E0D\u518D\u7406\u6211\u4E86\u3002"
+      value: "\uFF08\u5927\u7237\u4E0D\u518D\u7406\u6211\u4E86\u3002\uFF09"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -50129,7 +50129,7 @@ PrefabInstance:
     - target: {fileID: 7251784054510588302, guid: e74f08bdfcbc4ab45afcb68a31cfc8f5,
         type: 3}
       propertyPath: m_text
-      value: "\u8001\u4EBA\u6CA1\u8FDE\u63A5\u624B\u673A\uFF0C\u4ED6\u6CA1\u6709\u7406\u6211\u3002"
+      value: "\uFF08\u8001\u4EBA\u6CA1\u8FDE\u63A5\u624B\u673A\uFF0C\u4ED6\u6CA1\u6709\u7406\u6211\u3002\uFF09"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -50751,6 +50751,91 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1284653874265194586, guid: 20cfbc079d067994f91dd1507fd2c7d6,
+        type: 3}
+      propertyPath: sfxClips.Array.size
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1284653874265194586, guid: 20cfbc079d067994f91dd1507fd2c7d6,
+        type: 3}
+      propertyPath: sfxClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: ae62b5e06638e3740b9eef0e67976215, type: 3}
+    - target: {fileID: 1284653874265194586, guid: 20cfbc079d067994f91dd1507fd2c7d6,
+        type: 3}
+      propertyPath: sfxClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5811755a030d93a468c7d7fb483e487d, type: 3}
+    - target: {fileID: 1284653874265194586, guid: 20cfbc079d067994f91dd1507fd2c7d6,
+        type: 3}
+      propertyPath: sfxClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0a4ab7bd41355834f86898c69ba8effa, type: 3}
+    - target: {fileID: 1284653874265194586, guid: 20cfbc079d067994f91dd1507fd2c7d6,
+        type: 3}
+      propertyPath: sfxClips.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9b1778e356885414a9e7cf8a3eb5b2a7, type: 3}
+    - target: {fileID: 1284653874265194586, guid: 20cfbc079d067994f91dd1507fd2c7d6,
+        type: 3}
+      propertyPath: sfxClips.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 84962872775435f479b2230cff83f437, type: 3}
+    - target: {fileID: 1284653874265194586, guid: 20cfbc079d067994f91dd1507fd2c7d6,
+        type: 3}
+      propertyPath: sfxClips.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 992f66a47d252c448a6adec1ccfcd259, type: 3}
+    - target: {fileID: 1284653874265194586, guid: 20cfbc079d067994f91dd1507fd2c7d6,
+        type: 3}
+      propertyPath: sfxClips.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: a6df945ec87296c438bd281e8c564a05, type: 3}
+    - target: {fileID: 1284653874265194586, guid: 20cfbc079d067994f91dd1507fd2c7d6,
+        type: 3}
+      propertyPath: sfxClips.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: e3261cbdf8c02dc4590ee10ecc62778c, type: 3}
+    - target: {fileID: 1284653874265194586, guid: 20cfbc079d067994f91dd1507fd2c7d6,
+        type: 3}
+      propertyPath: sfxClips.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5c57855ffe35910469849ba689c6d0aa, type: 3}
+    - target: {fileID: 1284653874265194586, guid: 20cfbc079d067994f91dd1507fd2c7d6,
+        type: 3}
+      propertyPath: sfxClips.Array.data[9]
+      value: 
+      objectReference: {fileID: 8300000, guid: f3851aa177a6d864aa8c6b62badfc96a, type: 3}
+    - target: {fileID: 1284653874265194586, guid: 20cfbc079d067994f91dd1507fd2c7d6,
+        type: 3}
+      propertyPath: sfxClips.Array.data[10]
+      value: 
+      objectReference: {fileID: 8300000, guid: b66279aed152da64a825cc1404e6ba96, type: 3}
+    - target: {fileID: 1284653874265194586, guid: 20cfbc079d067994f91dd1507fd2c7d6,
+        type: 3}
+      propertyPath: sfxClips.Array.data[11]
+      value: 
+      objectReference: {fileID: 8300000, guid: a1487988fbfc5a542b985f0651915d95, type: 3}
+    - target: {fileID: 1284653874265194586, guid: 20cfbc079d067994f91dd1507fd2c7d6,
+        type: 3}
+      propertyPath: sfxClips.Array.data[12]
+      value: 
+      objectReference: {fileID: 8300000, guid: f152efd727eac7b48bea87b08cc4701d, type: 3}
+    - target: {fileID: 1284653874265194586, guid: 20cfbc079d067994f91dd1507fd2c7d6,
+        type: 3}
+      propertyPath: sfxClips.Array.data[13]
+      value: 
+      objectReference: {fileID: 8300000, guid: a4fd8247426719544b27cf0db7377da3, type: 3}
+    - target: {fileID: 1284653874265194586, guid: 20cfbc079d067994f91dd1507fd2c7d6,
+        type: 3}
+      propertyPath: sfxClips.Array.data[14]
+      value: 
+      objectReference: {fileID: 8300000, guid: a8614726718f1d84e919a5a83c246728, type: 3}
+    - target: {fileID: 1284653874265194586, guid: 20cfbc079d067994f91dd1507fd2c7d6,
+        type: 3}
+      propertyPath: sfxClips.Array.data[15]
+      value: 
+      objectReference: {fileID: 8300000, guid: d758a3f30085f974d99183aa8b1d68f5, type: 3}
     - target: {fileID: 6941417244117521488, guid: 20cfbc079d067994f91dd1507fd2c7d6,
         type: 3}
       propertyPath: m_LocalPosition.x
