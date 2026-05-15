@@ -211,6 +211,11 @@ public class ChatMessageManager : MonoBehaviour
         }
 
         currentChatMessageSequence = sequence;
+
+        if (chatBox.IsNotNull() && !chatBox.activeSelf && chatMessageHintGO.IsNotNull())
+        {
+            chatMessageHintGO.SetActive(true);
+        }
         
         if (chatMessageSequenceCoroutine != null)
         {
