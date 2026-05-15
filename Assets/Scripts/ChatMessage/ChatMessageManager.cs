@@ -195,7 +195,7 @@ public class ChatMessageManager : MonoBehaviour
 
         if (!string.IsNullOrEmpty(chatMessage.id) && AudioManager.instance != null)
         {
-            AudioManager.instance.PlaySFX(sequenceId + "-" + chatMessage.id);
+            AudioManager.instance.PlaySFX(chatMessage.id);
         }
 
         currentTalkMessageUnit = talkMessageUnit;
@@ -211,6 +211,11 @@ public class ChatMessageManager : MonoBehaviour
         }
 
         currentChatMessageSequence = sequence;
+
+        if (chatBox.IsNotNull() && !chatBox.activeSelf && chatMessageHintGO.IsNotNull())
+        {
+            chatMessageHintGO.SetActive(true);
+        }
         
         if (chatMessageSequenceCoroutine != null)
         {
