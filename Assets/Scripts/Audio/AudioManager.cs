@@ -1,26 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using JTUtility;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
     [Header("Audio Sources")]
-    [SerializeField] AudioSource musicSource;
     [SerializeField] List<AudioClip> sfxClips;
-
-    [Header("Audio Clips")]
-    public AudioClip normalBgm;
-    public AudioClip bossIntro;
-    public AudioClip bossLoop;
-    public AudioClip flyIntro;
-    public AudioClip flyLoop;
-
-    public float normalBgmVolume;
-    public float bossBgmVolume;
-    public float flyBgmVolume;
+    [SerializeField] AudioClip normalBgm;
+    [SerializeField] float bgmVolume = 1f;
 
     public float fadeTime = 2f;
+
+    private AudioSource bgmSource;
+    private AudioSource bgmCrossfadeSource;
 
     private static AudioManager _instance;
     public static AudioManager instance
@@ -52,10 +46,16 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        if (musicSource != null)
+        if (bgmSource.IsNull())
         {
-            musicSource.clip = normalBgm;
-            musicSource.Play();
+            bgmSource = gameObject.AddComponent<AudioSource>();
+            bgmSource.loop = true;
+        }
+
+        if (bgmSource.IsNotNull() && normalBgm.IsNotNull())
+        {
+            bgmSource.clip = normalBgm;
+            bgmSource.Play();
         }
     }
 
@@ -112,51 +112,71 @@ public class AudioManager : MonoBehaviour
         
         return null;
     }
-
-    public void ChangeBGMToNormal()
+    
+    public void PlayBGM(AudioClip clip)
     {
-        var newSource = musicSource.gameObject.AddComponent<AudioSource>();
+        if (clip.IsNull() || bgmSource.IsNull() || bgmSource.clip == clip)
+        {
+            return;
+        }
 
-        newSource.clip = normalBgm;
-        newSource.Play();
-        newSource.volume = 0;
-        newSource.DOFade(normalBgmVolume, fadeTime);
+        KillBgmFadeTweens();
 
-        musicSource.DOFade(0, fadeTime).OnComplete(() => {
-            Destroy(musicSource);
-            musicSource = newSource;
+        if (!bgmSource.isPlaying || bgmSource.clip == null)
+        {
+            bgmSource.volume = bgmVolume;
+            bgmSource.clip = clip;
+            bgmSource.loop = true;
+            bgmSource.Play();
+            return;
+        }
+
+        EnsureBgmCrossfadeSource();
+
+        float targetVolume = bgmSource.volume > 0.001f ? bgmSource.volume : bgmVolume;
+
+        bgmCrossfadeSource.clip = clip;
+        bgmCrossfadeSource.loop = bgmSource.loop;
+        bgmCrossfadeSource.volume = 0f;
+        bgmCrossfadeSource.time = 0f;
+        bgmCrossfadeSource.Play();
+
+        bgmSource.DOFade(0f, fadeTime).SetEase(Ease.Linear).SetUpdate(true);
+        bgmCrossfadeSource.DOFade(targetVolume, fadeTime).SetEase(Ease.Linear).SetUpdate(true).OnComplete(() =>
+        {
+            bgmSource.Stop();
+            bgmSource.clip = clip;
+            bgmSource.time = bgmCrossfadeSource.time;
+            bgmSource.volume = targetVolume;
+            bgmSource.Play();
+
+            bgmCrossfadeSource.Stop();
+            bgmCrossfadeSource.clip = null;
+            bgmCrossfadeSource.volume = 0f;
         });
     }
 
-    public void ChangeBGMToBoss()
+    private void KillBgmFadeTweens()
     {
-        var newSource = musicSource.gameObject.AddComponent<AudioSource>();
+        if (bgmSource.IsNotNull())
+        {
+            bgmSource.DOKill();
+        }
 
-        newSource.PlayOneShot(bossIntro);   
-        newSource.clip = bossLoop;
-        newSource.PlayScheduled(AudioSettings.dspTime + bossIntro.length);
-        newSource.volume = 0;
-        newSource.DOFade(bossBgmVolume, fadeTime);
-
-        musicSource.DOFade(0, fadeTime).OnComplete(() => {
-            Destroy(musicSource);
-            musicSource = newSource;
-        });
+        if (bgmCrossfadeSource.IsNotNull())
+        {
+            bgmCrossfadeSource.DOKill();
+        }
     }
 
-    public void ChangeBGMToFly()
+    private void EnsureBgmCrossfadeSource()
     {
-        var newSource = musicSource.gameObject.AddComponent<AudioSource>();
+        if (bgmCrossfadeSource.IsNotNull())
+        {
+            return;
+        }
 
-        newSource.PlayOneShot(flyIntro);   
-        newSource.clip = flyLoop;
-        newSource.PlayScheduled(AudioSettings.dspTime + flyIntro.length);
-        newSource.volume = 0;
-        newSource.DOFade(flyBgmVolume, fadeTime);
-
-        musicSource.DOFade(0, fadeTime).OnComplete(() => {
-            Destroy(musicSource);
-            musicSource = newSource;
-        });
+        bgmCrossfadeSource = gameObject.AddComponent<AudioSource>();
+        bgmCrossfadeSource.playOnAwake = false;
     }
 }
