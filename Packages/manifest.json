@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.boxqkrtm.ide.cursor": "https://github.com/boxqkrtm/com.unity.ide.cursor.git",
-    "com.qiaozhilei.easy-text-effects": "file:E:/UnityPrj/PhoneLife/Easy-Text-Effects-for-Unity-main",
+    "com.qiaozhilei.easy-text-effects": "https://github.com/LeiQiaoZhi/Easy-Text-Effect.git",
     "com.unity.cinemachine": "2.10.7",
     "com.unity.collab-proxy": "2.12.4",
     "com.unity.device-simulator.devices": "1.0.1",
