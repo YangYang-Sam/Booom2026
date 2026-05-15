@@ -156,6 +156,15 @@ public class AudioManager : MonoBehaviour
         });
     }
 
+    public void ClearBGM()
+    {
+        if (bgmSource.IsNotNull())
+        {
+            bgmSource.Stop();
+            bgmSource.clip = null;
+        }
+    }
+
     private void KillBgmFadeTweens()
     {
         if (bgmSource.IsNotNull())

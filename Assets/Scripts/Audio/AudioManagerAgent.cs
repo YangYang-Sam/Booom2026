@@ -25,4 +25,15 @@ public class AudioManagerAgent : MonoBehaviour
 
         AudioManager.instance.PlayBGM(clip);
     }
+
+    public void ClearBGM()
+    {
+        if (AudioManager.instance == null)
+        {
+            Debug.LogError("AudioManager not found");
+            return;
+        }
+        
+        AudioManager.instance.ClearBGM();
+    }
 }
